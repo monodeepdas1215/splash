@@ -1,4 +1,4 @@
-package core
+package main
 
 import (
 	"fmt"
@@ -22,7 +22,7 @@ func NewWorkerThread(id int) *workerThread {
 
 func (worker *workerThread) run() {
 
-	AppLogger.logger.Infof("%s started running... waiting for incoming work requests", worker.GetWorkerDetails())
+	AppLogger.logger.Debugf("%s started running... waiting for incoming work requests", worker.GetWorkerDetails())
 
 	go func() {
 		for {

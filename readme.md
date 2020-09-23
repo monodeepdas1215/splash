@@ -25,12 +25,12 @@ Built from ground-up entire using [Golang](https://golang.org/)
 - Initialize the threadpool
 
 ```
-// pool := core.NewSplashPool(requestBufferSize int, maxConcurrency int, logLevel int)
-pool := core.NewSplashPool(500, 1000, core.InfoLevel)
+// pool := NewSplashPool(requestBufferSize int, maxConcurrency int, logLevel int)
+pool := NewSplashPool(500, 1000, core.InfoLevel)
 ```
 Log Level can be any of the following:
 
-`core.DebugLevel = 1 | core.InfoLevel = 2 | core.WarningLevel = 3 | core.ErrorLevel = 0`
+`DebugLevel = 1 | InfoLevel = 2 | WarningLevel = 3 | ErrorLevel = 0`
 
 - Create a WorkRequest struct
 ```
